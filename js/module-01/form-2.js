@@ -14,13 +14,13 @@ refs.btnShipping.addEventListener("click", onBtnShippingClick);
 refs.btnClear.addEventListener("click", onBtnClearClick);
 
 function onBtnShippingClick() {
-  const country = refs.inputCountry.value;
-  const price = refs.inputPrice.value;
-  const fee = refs.inputFee.value;
-
-  const message = getShippingMessage(country, price, fee);
-
-  refs.resultShippingLabel.textContent = "Result" + message;
+  refs.resultShippingLabel.textContent =
+    "Result: " +
+    getShippingMessage(
+      refs.inputCountry.value,
+      refs.inputPrice.value,
+      refs.inputFee.value
+    );
 }
 
 function onBtnClearClick() {

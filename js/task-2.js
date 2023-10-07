@@ -1,9 +1,14 @@
 "use strict";
 import isNumber from "./module-01/auxiliary.js";
+
 export default function getShippingMessage(country, price, deliveryFee) {
-  if (!isNumber(price)) return "Error in price";
-  if (!isNumber(deliveryFee)) return "Error in deliveryFee";
-  return `Shipping to ${country} will cost ${price + deliveryFee} credits`;
+  const priceFloat = parseFloat(price);
+  const feeFloat = parseFloat(deliveryFee);
+
+  if (!isNumber(priceFloat)) return "Error in price";
+  if (!isNumber(feeFloat)) return "Error in deliveryFee";
+
+  return `Shipping to ${country} will cost ${priceFloat + feeFloat} credits`;
 }
 
 // for test

@@ -14,12 +14,9 @@ refs.btnMakeTransaction.addEventListener("click", onBtnMakeTransactionClick);
 refs.btnClear.addEventListener("click", onBtnClearClick);
 
 function onBtnMakeTransactionClick() {
-  const quantity = Number(refs.inputQuantity.value);
-  console.log(quantity);
-
-  const price = Number(refs.inputPrice.value);
-  const message = makeTransaction(quantity, price);
-  refs.resultLabel.textContent = "Result: " + message;
+  refs.resultLabel.textContent =
+    "Result: " +
+    makeTransaction(refs.inputQuantity.value, refs.inputPrice.value);
 }
 
 function onBtnClearClick() {
