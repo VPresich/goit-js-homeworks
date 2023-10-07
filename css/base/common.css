@@ -8,7 +8,8 @@
   text-decoration: none;
 }
 
-ol, ul {
+ol,
+ul {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -45,3 +46,9 @@ body {
   padding-bottom: 50px;
 }
 
+.accent-color {
+  color: var(--iris);
+}
+
+.active {
+}
