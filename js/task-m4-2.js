@@ -7,13 +7,32 @@
 //     спожитих спортсменом, у цей день.Візьми код нижче і встав після
 //     оголошення своєї функції для перевірки коректності її роботи.
 
-export default function calcAverageCalories(days) {
+// 1-й способ
+export default function calcAverageCalories1(days) {
   let caloriesTotal = 0;
   let caloriesAverage = 0;
 
   for (const day of days) {
     caloriesTotal += day.calories;
   }
+  const daysCount = days.length;
+  if (daysCount > 0) {
+    caloriesAverage = caloriesTotal / daysCount;
+  }
+
+  return caloriesAverage;
+}
+
+//2-й способ (forEach)
+
+function calcAverageCalories(days) {
+  let caloriesTotal = 0;
+  let caloriesAverage = 0;
+
+  days.forEach((day) => {
+    caloriesTotal += day.calories;
+  });
+
   const daysCount = days.length;
   if (daysCount > 0) {
     caloriesAverage = caloriesTotal / daysCount;

@@ -21,6 +21,18 @@ export default function isEnoughCapacity(products, containerSize) {
   return containerSize >= productsSize;
 }
 
+// 2-й варіант (forEach)
+function isEnoughCapacity1(products, containerSize) {
+  const values = Object.values(products);
+
+  let productsSize = 0;
+  values.forEach((value) => {
+    productsSize += value;
+  });
+
+  return containerSize >= productsSize;
+}
+
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
 
 console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)); // false

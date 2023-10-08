@@ -11,12 +11,25 @@
 // кожного елемента и додавання до свого масиву.
 // Поверни свій новий масив з підходящими числами як результат.
 
+// 1-й варінт, як тут в конспекті (трохи тупий)
+
 export default function filterArray(numbers, value) {
   const filteredArray = [];
   for (const elem of numbers) {
     if (elem <= value) continue;
     filteredArray.push(elem);
   }
+  return filteredArray;
+}
+
+// 2-й варіант (метод forEach)
+function filterArray1(numbers, value) {
+  const filteredArray = [];
+  numbers.forEach((elem) => {
+    if (elem > value) {
+      filteredArray.push(elem);
+    }
+  });
   return filteredArray;
 }
 

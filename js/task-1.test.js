@@ -1,3 +1,5 @@
+// unit-test for function makeTransaction()
+
 import makeTransaction from "./task-1.js";
 test("makeTransaction testing ", () => {
   expect(makeTransaction(5, 3000)).toBe(

@@ -1,3 +1,5 @@
+// unit-test for function getShippingMessage()
+
 import getShippingMessage from "./task-2.js";
 test("getShippingMessage testing ", () => {
   expect(getShippingMessage("Australia", 120, 50)).toBe(

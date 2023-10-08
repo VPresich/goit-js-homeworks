@@ -1,3 +1,5 @@
+// unit-test for function getElementWidth()
+
 import getElementWidth from "./task-3.js";
 test("getElementWidth testing ", () => {
   expect(getElementWidth("50px", "8px", "4px")).toBe(74);
