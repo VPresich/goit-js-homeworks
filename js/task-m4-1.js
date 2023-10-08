@@ -33,6 +33,16 @@ function isEnoughCapacity1(products, containerSize) {
   return containerSize >= productsSize;
 }
 
+// 3-й варіант (reduce)
+function isEnoughCapacity2(products, containerSize) {
+  const productsSize = Object.values(products).reduce(
+    (total, value) => total + value,
+    0
+  );
+
+  return containerSize >= productsSize;
+}
+
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
 
 console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)); // false

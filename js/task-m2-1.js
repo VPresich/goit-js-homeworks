@@ -10,7 +10,6 @@ function makeTransaction(quantity, pricePerDroid, customerCredits) {
   const quantityInt = parseInt(quantity);
   const priceFloat = parseFloat(pricePerDroid);
   const creditsFloat = parseFloat(customerCredits);
-  console.log("customerCredits", customerCredits, creditsFloat);
 
   if (!isNumber(quantityInt)) return "Error in quantity";
   if (!isNumber(priceFloat)) return "Error in pricePerDroid";
@@ -38,7 +37,6 @@ export default function makeTransaction2(
   const quantityInt = parseInt(quantity);
   const priceFloat = parseFloat(pricePerDroid);
   const creditsFloat = parseFloat(customerCredits.value);
-  console.log("customerCredits", customerCredits, creditsFloat);
 
   if (!isNumber(quantityInt)) return "Error in quantity";
   if (!isNumber(priceFloat)) return "Error in pricePerDroid";

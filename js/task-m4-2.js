@@ -8,37 +8,50 @@
 //     оголошення своєї функції для перевірки коректності її роботи.
 
 // 1-й способ
-export default function calcAverageCalories1(days) {
-  let caloriesTotal = 0;
-  let caloriesAverage = 0;
+export default function calcAverageCalories(days) {
+  const daysCount = days.length;
+  if (daysCount === 0) return 0;
 
+  let caloriesTotal = 0;
   for (const day of days) {
     caloriesTotal += day.calories;
   }
-  const daysCount = days.length;
-  if (daysCount > 0) {
-    caloriesAverage = caloriesTotal / daysCount;
-  }
 
-  return caloriesAverage;
+  return caloriesTotal / daysCount;
 }
 
 //2-й способ (forEach)
+function calcAverageCalories1(days) {
+  const daysCount = days.length;
+  if (daysCount === 0) return 0;
 
-function calcAverageCalories(days) {
   let caloriesTotal = 0;
-  let caloriesAverage = 0;
-
   days.forEach((day) => {
     caloriesTotal += day.calories;
   });
 
-  const daysCount = days.length;
-  if (daysCount > 0) {
-    caloriesAverage = caloriesTotal / daysCount;
-  }
+  return caloriesTotal / daysCount;
+}
 
-  return caloriesAverage;
+// 3й способ
+function calcAverageCalories2(days) {
+  const daysCount = days.length;
+  if (daysCount === 0) return 0;
+
+  const caloriesTotal = days.reduce((sum, day) => sum + day.calories, 0);
+  return caloriesTotal / daysCount;
+}
+
+// 4й способ
+function calcAverageCalories3(days) {
+  const daysCount = days.length;
+  if (daysCount === 0) return 0;
+
+  const caloriesTotal = days
+    .map((day) => day.calories)
+    .reduce((sum, calories) => sum + calories, 0);
+
+  return caloriesTotal / daysCount;
 }
 
 console.log(
