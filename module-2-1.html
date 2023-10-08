@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test of module 1 task 1</title>
+    <title>test of module2 task 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,41 +55,54 @@
 
         <form class="form-transaction-wrapper">
           <div class="inputs-wrapper">
-            <label class="label-style" for="droids-quantity"
+            <label class="label-style" for="droids-quantity2"
               >Droids quantity:
               <input
                 class="input-style"
-                name="droids-quantity"
-                id="droids-quantity"
+                name="droids-quantity2"
+                id="droids-quantity2"
                 type="text"
                 placeholder="Please enter integer number"
                 required
               />
             </label>
-            <label class="label-style" for="droid-price"
+            <label class="label-style" for="droid-price2"
               >Droid price:
               <input
                 class="input-style"
-                name="droid-price"
-                id="droid-price"
+                name="droid-price2"
+                id="droid-price2"
                 type="text"
                 placeholder="Please enter number"
                 required
               />
             </label>
           </div>
-          <label class="label-style js-result-transaction">Result: </label>
+
+          <label class="label-style" for="customer-credits"
+            >Customer credits:
+            <input
+              class="input-style"
+              name="customer-credits"
+              id="customer-credits"
+              type="text"
+              placeholder="Please enter number"
+              required
+            />
+          </label>
+
+          <label class="label-style js-result-transaction2">Result: </label>
           <div class="buttons-wrapper">
-            <button class="button-styles js-make-transaction" type="button">
+            <button class="button-styles js-make-transaction2" type="button">
               Make Transaction
             </button>
-            <button class="button-styles js-btn-clear" type="button">
+            <button class="button-styles js-btn-clear2" type="button">
               Clear
             </button>
           </div>
         </form>
       </div>
     </section>
-    <script src="./js/module-01/form-1.js" type="module"></script>
+    <script src="./js/module-02/form-1.js" type="module"></script>
   </body>
 </html>
