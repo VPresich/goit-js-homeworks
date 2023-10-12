@@ -1,5 +1,5 @@
 "use strict";
-import isNumber from "./module-01/auxiliary.js";
+import isNumber from "./auxiliary.js";
 
 export default function makeTransaction(quantity, pricePerDroid) {
   const quantityInt = parseInt(quantity);

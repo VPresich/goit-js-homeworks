@@ -1,6 +1,6 @@
 "use strict";
 
-import makeTransaction2 from "../task-m2-1.js";
+import makeTransaction2 from "./task-m2-1.js";
 
 const refs = {
   btnMakeTransaction: document.querySelector(".js-make-transaction2"),

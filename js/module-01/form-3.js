@@ -1,5 +1,5 @@
 "use strict";
-import getElementWidth from "../task-3.js";
+import getElementWidth from "./task-3.js";
 
 const refs = {
   btnElementWidth: document.querySelector(".js-btn-width"),

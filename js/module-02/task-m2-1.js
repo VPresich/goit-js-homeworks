@@ -4,7 +4,7 @@
 // в іншому випадку функція має повертати рядок "You ordered <quantity> droids worth <totalPrice> credits!", де < quantity > це кількість замовлених дроїдів,
 //     а < totalPrice > це їх загальна вартість.
 
-import isNumber from "./module-01/auxiliary.js";
+import isNumber from "../module-01/auxiliary.js";
 
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
   const quantityInt = parseInt(quantity);

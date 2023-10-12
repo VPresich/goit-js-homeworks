@@ -1,5 +1,5 @@
 "use strict";
-import getShippingMessage from "../task-2.js";
+import getShippingMessage from "./task-2.js";
 
 const refs = {
   btnShipping: document.querySelector(".js-btn-shiping"),
