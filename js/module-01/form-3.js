@@ -18,12 +18,12 @@ function onBtnElementWidthClick() {
   const padding = refs.inputPadding.value;
   const border = refs.inputBorder.value;
   const result = getElementWidth(content, padding, border);
-  refs.resultWidthLabel.textContent = "Result: " + String(result);
+  refs.resultWidthLabel.textContent = String(result);
 }
 
 function onBtnClearClick() {
   refs.inputContent.value = "";
   refs.inputPadding.value = "";
   refs.inputBorder.value = "";
-  refs.resultWidthLabel.textContent = "Result: ";
+  refs.resultWidthLabel.textContent = "";
 }

@@ -1,6 +1,6 @@
 "use strict";
 
-import  formatMessage from "./task-m2-1.js";
+import  formatMessage from "./task-2.js";
 
 const refs = {
   btnGetMassage: document.querySelector(".js-get-massage"),
@@ -15,12 +15,11 @@ refs.btnClear.addEventListener("click", onBtnClearClick);
 
 function onBtnGetMassageClick() {
   refs.resultLabel.textContent =
-    "Result: " +
-    formatMessage(txtArea.value, inputLength.value); 
+    formatMessage(refs.txtArea.value, refs.inputLength.value); 
 }
 
 function onBtnClearClick() {
   refs.txtArea.value = "";
   refs.inputLength.value = "";  
-  refs.resultLabel.textContent = "Result: ";
+  refs.resultLabel.textContent = "";
 }

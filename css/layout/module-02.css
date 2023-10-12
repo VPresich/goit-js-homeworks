@@ -30,3 +30,13 @@
   resize: none;
   transition: border-color 250ms ease-out;
 }
+
+.form-country-shipping-wrapper{
+  display: flex; 
+  align-items: flex-center; 
+  column-gap: 30px;  
+  width: 800px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.08);
+}

@@ -20,17 +20,17 @@
 export default function getShippingCost(country) {
   let shippingPrice;
   let message = "Sorry, there is no delivery to your country";
-  switch (country) {
-    case "China":
+  switch (country.toLowerCase()) {
+    case "china":
       shippingPrice = 100;
       break;
-    case "Chile":
+    case "chile":
       shippingPrice = 250;
       break;
-    case "Australia":
+    case "australia":
       shippingPrice = 170;
       break;
-    case "Jamaica":
+    case "jamaica":
       shippingPrice = 120;
       break;
     default:

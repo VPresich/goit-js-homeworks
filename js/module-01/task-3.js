@@ -1,5 +1,5 @@
 "use strict";
-import isNumber from "./module-01/auxiliary.js";
+import isNumber from "./auxiliary.js";
 export default function getElementWidth(content, padding, border) {
   const contentWidth = parseFloat(content);
   const paddingWidth = parseFloat(padding);

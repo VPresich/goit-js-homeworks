@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home work one</title>
+    <title>test of module2 task 3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
+
   <body>
     <header class="header-page">
       <div class="container">
@@ -61,36 +62,43 @@
         </ul>
       </div>
     </header>
-    <main>
-      <section class="section-layout">
-        <div class="container">
-          <div class="container home-page-container">
-            <h1 class="title-home">Домашня робота JS</h1>
-            <h2 class="name-stud">Валентина Александрова</h2>
+
+    <!-- ==================  module - 2 ================ -->
+    <!-- ==================  task - 3 ================ -->
+    <section class="section-layout">
+      <div class="container">
+        <h2 class="visually-hidden">Test of Task-2 Module-3</h2>
+
+        <form class="form-message-wrapper">
+          <div class="inputs-message-wrapper">
+            <label class="label-style" for="spam-message">
+              Example message:
+            </label>
+            <textarea
+              class="textarea-style"
+              name="spam_message"
+              id="spam-message"
+              placeholder="Please enter message"
+              required
+            ></textarea>            
           </div>
-        </div>
-      </section>
-    </main>
 
-    <!-- module-1 tasks -->
-    <script src="./js/module-01/task-1.js" type="module"></script>
-    <script src="./js/module-01/task-2.js" type="module"></script>
-    <script src="./js/module-01/task-3.js" type="module"></script>
+          <label class="label-style-result"
+            >Result:&nbsp;
+            <span class="js-spam-message accent-color"></span>
+          </label>
 
-    <!-- module-2 tasks -->
-    <script src="./js/module-02/task-1.js" type="module"></script>
-    <script src="./js/module-02/task-2.js" type="module"></script>
-    <script src="./js/module-02/task-3.js" type="module"></script>
-    <script src="./js/module-02/task-4.js" type="module"></script>
-
-    <!-- module-3 tasks -->
-    <script src="./js/module-03/task-1.js" type="module"></script>
-    <script src="./js/module-03/task-2.js" type="module"></script>
-    <script src="./js/module-03/task-3.js" type="module"></script>
-
-    <!-- module-4 tasks -->
-    <script src="./js/module-04/task-1.js" type="module"></script>
-    <script src="./js/module-04/task-2.js" type="module"></script>
-    <script src="./js/module-04/task-3.js" type="module"></script>
+          <div class="buttons-wrapper">
+            <button class="button-styles js-check-massage" type="button">
+              Check message
+            </button>
+            <button class="button-styles js-btn-clear-spam-message" type="button">
+              Clear
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="./js/module-02/form-3.js" type="module"></script>
   </body>
 </html>

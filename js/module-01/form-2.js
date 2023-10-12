@@ -14,10 +14,7 @@ refs.btnShipping.addEventListener("click", onBtnShippingClick);
 refs.btnClear.addEventListener("click", onBtnClearClick);
 
 function onBtnShippingClick() {
-  refs.resultShippingLabel.textContent =
-    "Result: " +
-    getShippingMessage(
-      refs.inputCountry.value,
+  refs.resultShippingLabel.textContent = getShippingMessage(refs.inputCountry.value,
       refs.inputPrice.value,
       refs.inputFee.value
     );
@@ -27,5 +24,5 @@ function onBtnClearClick() {
   refs.inputPrice.value = "";
   refs.inputCountry.value = "";
   refs.inputFee.value = "";
-  refs.resultShippingLabel.textContent = "Result: ";
+  refs.resultShippingLabel.textContent = "";
 }

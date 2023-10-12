@@ -53,6 +53,16 @@
   color: var(--navyblue);
 }
 
+.label-style-result{
+  display: flex; 
+  row-gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
 .input-style {
   width: 250px;
   height: 40px;

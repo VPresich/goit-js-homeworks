@@ -1,6 +1,6 @@
 "use strict";
 
-import makeTransaction2 from "./task-m2-1.js";
+import makeTransaction2 from "./task-1.js";
 
 const refs = {
   btnMakeTransaction: document.querySelector(".js-make-transaction2"),
@@ -16,7 +16,6 @@ refs.btnClear.addEventListener("click", onBtnClearClick);
 
 function onBtnMakeTransactionClick() {
   refs.resultLabel.textContent =
-    "Result: " +
     makeTransaction2(
       refs.inputQuantity.value,
       refs.inputPrice.value,
@@ -28,5 +27,5 @@ function onBtnClearClick() {
   refs.inputPrice.value = "";
   refs.inputQuantity.value = "";
   refs.inputCustomerCredits.value = "";
-  refs.resultLabel.textContent = "Result: ";
+  refs.resultLabel.textContent = "";
 }

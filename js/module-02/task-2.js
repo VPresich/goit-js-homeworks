@@ -1,12 +1,17 @@
 "use strict";
+import isNumber from "../module-01/auxiliary.js";
+
 // Якщо довжина рядка дорівнює або менша за maxLength,
 // то функція повертає початковий рядок без змін.
 // Якщо довжина перевищує maxLength, то функція обрізає рядок до maxLength символів,
 // додає трикрапку "..." в кінці та повертає обрізану версію.
 
 export default function formatMessage(message, maxLength) {
-  if (message.length <= maxLength) return message;
 
+  const msgLength = parseInt(maxLength);  
+  if (!isNumber(msgLength)) return "Error in maxLength";
+  
+  if (message.length <= maxLength) return message;
   return message.slice(0, maxLength) + "...";
 }
 
