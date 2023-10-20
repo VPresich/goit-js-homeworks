@@ -1,0 +1,15 @@
+.form-customer-order-wrapper {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.08);
+  }
+
+  .inputs-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
