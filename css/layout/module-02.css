@@ -20,7 +20,7 @@
   padding-left: 16px;
   font-size: 16px;
   border-radius: 8px;
-  letter-spacing: -0.02em;  
+  letter-spacing: -0.02em;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 18px;
@@ -31,10 +31,10 @@
   transition: border-color 250ms ease-out;
 }
 
-.form-country-shipping-wrapper{
-  display: flex; 
-  align-items: flex-center; 
-  column-gap: 30px;  
+.form-country-shipping-wrapper {
+  display: flex;
+  align-items: flex-center;
+  column-gap: 30px;
   width: 800px;
   padding: 20px;
   border-radius: 4px;

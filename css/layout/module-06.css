@@ -1,15 +1,121 @@
 .form-customer-order-wrapper {
-    display: flex;
-    row-gap: 16px;
-    flex-direction: column;
-    width: 500px;
-    padding: 20px;
-    border-radius: 4px;
-    border: 1px solid rgba(46, 47, 66, 0.08);
-  }
+  display: flex;
+  column-gap: 16px;
+  width: 800px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.08);
+}
 
-  .inputs-message-wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-  }
+.inputs-order-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.label-order-style {
+  display: flex;
+  column-gap: 12px;
+  align-items: baseline;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.label-order-cost {
+  display: flex;
+  column-gap: 220px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.input-combobox-style {
+  cursor: pointer;
+  width: 270px;
+  height: 40px;
+  padding-left: 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+.thead-row-table {
+  padding: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 500px;
+  text-align: left;
+  color: var(--slate);
+}
+
+.tbody-row-table {
+  padding: 4px;
+  font-size: 14px;
+  text-align: left;
+  color: var(--slate);
+}
+
+.tbody-row-table {
+  padding: 4px;
+  font-size: 14px;
+  text-align: left;
+  color: var(--slate);
+}
+
+.order-table {
+  color: var(--slate);
+}
+
+.telem-number {
+  width: 50px;
+  text-align: center;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-title {
+  width: 300px;
+  text-align: left;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-price {
+  width: 100px;
+  text-align: center;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-option {
+  width: 200px;
+  text-align: center;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-button {
+  cursor: pointer;
+  background-color: var(--iris);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.buttons-order-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}

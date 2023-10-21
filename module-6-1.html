@@ -76,35 +76,48 @@
 
         <form class="form-customer-order-wrapper">
           <div class="inputs-order-wrapper">
-            <label class="label-style" for="select-order">Select order:</label>
-            <select class="input-style" id="select-order" name="order">
-              <option value="Burger">Burger</option>
-              <option value="Pizza">Pizza</option>
-              <option value="Salad">Salad</option>
-            </select>
-          </div>
+            <label class="label-order-style" for="select-order">
+              Select order:
+              <select
+                class="input-combobox-style"
+                id="select-order"
+                name="order"
+              >
+                <option value="Burger" data-price="5.99">Burger - $5.99</option>
+                <option value="Pizza" data-price="8.99">Pizza - $8.99</option>
+                <option value="Salad" data-price="4.99">Salad - $4.99</option>
+              </select>
+            </label>
 
-          <label class="label-style-result"
-            >Order cost:&nbsp;
-            <span class="js-order-cost accent-color"></span>
-          </label>
-          <div class="buttons-wrapper">
+            <table class="order-table">
+              <thead class="thead-style">
+                <tr class="thead-row-table">
+                  <th class="telem-title">Order</th>
+                  <th class="telem-price">Price</th>
+                  <th class="telem-option">Option</th>
+                </tr>
+              </thead>
+              <tbody class="js-order-list"></tbody>
+            </table>
+            <label class="label-order-cost"
+              >Order cost:&nbsp;
+              <span class="js-order-cost accent-color"></span>
+            </label>
+          </div>
+          <div class="buttons-order-wrapper">
             <button class="button-styles js-add-order" type="button">
-              Add Order
+              Add Orders
             </button>
             <button class="button-styles js-get-order" type="button">
-              Get Order
+              Get Orders
             </button>
-            <button
-              class="button-styles js-btn-order-clear"
-              type="button"
-            >
+            <button class="button-styles js-btn-order-clear" type="button">
               Clear
             </button>
           </div>
         </form>
       </div>
     </section>
-    <script src="./js/module-02/form-4.js" type="module"></script>
+    <script src="./js/module-06/form-1.js" type="module"></script>
   </body>
 </html>

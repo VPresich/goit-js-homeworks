@@ -1,41 +1,58 @@
-'use strict';
+"use strict";
 
-// Перед звільненням розробник зламав вихідний код управління
-// акаунтами користувачів нашого сервісу доставки їжі.
-// Виконай рефакторинг методів об'єкта customer,
-// розставивши відсутні this під час звернення до властивостей об'єкта.
+export default class Customer {
+  #username = "noname";
+  #balance = 0.0;
+  #discount = 0.0;
+  #orders = [];
 
-// Використай цей стартовий код і виконай рефакторинг.
-// Після оголошення об'єкта ми додали виклики методів. 
-// У консоль будуть виведені результати їх роботи. 
-// Будь ласка, нічого там не змінюй.
+  constructor({
+    username = "noname",
+    balance = 0.0,
+    discount = 0.0,
+    orders = [],
+  } = {}) {
+    this.#username = username;
+    this.#balance = balance;
+    this.#discount = discount;
+    this.#orders = orders;
+  }
 
-export default customer = {
-  username: "Mango",
-  balance: 24000,
-  discount: 0.1,
-  orders: ["Burger", "Pizza", "Salad"],
-  
-  getBalance() {
-    return this.balance;
-  },
-  getDiscount() {
-    return this.discount;
-  },
-  setDiscount(value) {
-    this.discount = value;
-  },
-  getOrders() {
-    return this.orders;
-  },
-  addOrder(cost, order) {
+  get username() {
+    return this.#username;
+  }
+
+  get balance() {
+    return this.#balance;
+  }
+
+  set balance(newBalance) {
+    this.#balance = newBalance;
+  }
+
+  get discount() {
+    return this.#discount;
+  }
+
+  set discount(newDiscount) {
+    this.#discount = newDiscount;
+  }
+
+  get orders() {
+    return this.#orders;
+  }
+
+  addOrder(order, cost) {
     this.balance -= cost * (1 - this.discount);
     this.orders.push(order);
-  }, 
-};
+  }
+}
 
-customer.setDiscount(0.15);
-console.log(customer.getDiscount()); // 0.15
-customer.addOrder(5000, "Steak");
-console.log(customer.getBalance()); // 19750
-console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+//for test
+const customer = new Customer({ username: "Mango", balance: 20000 });
+console.log("username: ", customer.username);
+customer.discount = 0.15;
+console.log("discount: ", customer.discount);
+customer.addOrder("Steak", 2000);
+console.log("balance: ", customer.balance);
+console.log("orders: ", customer.orders);
